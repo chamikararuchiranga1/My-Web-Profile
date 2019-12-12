@@ -1,0 +1,9 @@
+#Slider{
+    position: relative;
+    left: 25%;
+}
+#aboutText{
+    width: 100%;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+}

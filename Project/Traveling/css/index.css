@@ -1,0 +1,10 @@
+#mainText{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white;
+    z-index: 4;
+    font-family: 'Pacifico', cursive;
+
+    top: 40vh;
+}

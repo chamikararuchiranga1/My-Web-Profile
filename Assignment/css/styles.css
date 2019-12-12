@@ -1,0 +1,79 @@
+/*
+======================Type Selector===================
+ul{
+    color: blueviolet;
+    font-size: 40px;
+    border: 2px solid black;
+}
+h2{
+    color: green;
+}
+=====================id selector=======================
+#ulListOne{
+    color: coral;
+}
+#ulListTwo{
+    color: fuchsia;
+}
+=====================class selector=======================
+.selected{
+    color: blue;
+}
+=====================attribute selector=================
+[class]{
+    color: aqua;
+}
+[class='selected']{
+    color: gold;
+}
+======================universal selector=================
+*{
+    color: red;
+}
+===================psudo classes==========================
+ul li:first-child{
+    color:blue;
+}
+ul li:last-child{
+    color:green;
+}
+ul li:nth-child(3){
+    color:green;
+}
+h2:hover{
+    background-color: gold;
+}
+==================psudo element=========================
+h2::first-letter{
+    color: red;
+}
+h2::before{
+    content: "!..";
+}
+h2::after{
+    content: "..!";
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*
+#h1Id{
+    color: gold;
+}
+:first-child{
+    color: coral;
+}
+.h1Class{
+    color: aqua;
+}
+[id]{
+    color: blue;
+}
+
+h1{
+    color: red;
+}
+*{
+    color: green;
+}
+/////////////////////////////////////////////////////////////
+project_1
+*/

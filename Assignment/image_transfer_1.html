@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background: #b4d6ff;
+        }
+        #main{
+            width: 900px;
+            height: 400px;
+            top: 10vw;
+            border: 2px solid black;
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+
+
+        }
+        #slider{
+            width: 2710px;
+            height: 400px;
+            background: #3fb3ff;
+            position: relative;
+            animation: slider 5s infinite alternate-reverse;
+        }
+        #slider>img{
+            width: 900px;
+            height: 100%;
+        }
+        @keyframes slider {
+            to{
+                margin: 0;
+            }
+            from{
+                margin-left: -1810px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="main">
+    <div id="slider">
+        <img src="img/AdobeStock_75164586-1024x683.jpeg">
+        <img src="img/AutonomousConfusingDrivers-648955078.jpg">
+        <img src="img/iStock-629627220.jpg">
+    </div>
+</div>
+</body>
+</html>

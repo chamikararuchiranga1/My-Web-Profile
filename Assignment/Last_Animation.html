@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        #main{
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+        #sky{
+            width: 100vw;
+            height: 60vh;
+            background: url("img_2/sky.jpg");
+            position: absolute;
+
+        }
+
+        #road{
+            width: 446vw;
+            height: 40vh;
+            position: absolute;
+            background: url("img_2/road.jpg");
+            top: 60vh;
+            animation: run 7s infinite;
+        }
+
+        #build{
+            width: 446vw;
+            height: 37vh;
+            position: absolute;
+            background: url("img_2/city.png");
+            top: 24vh;
+            left: 0;
+            animation: run 7s infinite;
+        }
+        #car{
+            width: 28vw;
+            height: 25vh;
+            position: relative;
+            top: 65vh;
+            left: 35vw;
+        }
+        #we1{
+            height: 10.2%;
+            width: 5.2% ;
+            position: absolute;
+            top: 78%;
+            left: 54.5%;
+            animation: wel 7s infinite;
+        }
+        #we2{
+            height: 10.2%;
+            width: 5.2%;
+            position: absolute;
+            top: 78%;
+            left: 37.4%;
+            animation: wel 7s infinite;
+        }
+
+       /* phone m*/
+        @media all and (max-width: 375px) and (min-width: 321px) {
+            #build{
+                width: 820vw;
+                top: 23vh;
+            }
+           #road{
+                width: 820vw;
+           }
+           #car{
+               width: 50vw;
+               height: 17vh;
+               left: 29vw;
+           }
+           #we1{
+               height: 6.2%;
+               width: 10.2%;
+               top: 74%;
+               left: 63.5%;
+           }
+           #we2{
+               height: 6.2%;
+               width: 10.2%;
+               top: 74%;
+               left: 32.4%;
+           }
+        }
+
+
+        /* phone s*/
+        @media all and (max-width: 320px) {
+            #build{
+                width: 943vw;
+                top: 19vh;
+                height: 44vh;
+            }
+            #road{
+                width: 943vw;
+            }
+            #car{
+                width: 58vw;
+                height: 15vh;
+                left: 22vw;
+            }
+            #we1{
+                height: 6.2%;
+                width: 12.2%;
+                top: 73%;
+                left: 61.5%;
+            }
+            #we2{
+                height: 6.2%;
+                width: 12.2%;
+                top: 73%;
+                left: 26.4%;
+            }
+        }
+
+        /* phone l*/
+        @media all and (max-width: 425px) and (min-width: 376px) {
+            #build{
+                width: 735vw;
+                top: 23vh;
+            }
+            #road{
+                width: 735vw;
+            }
+            #car{
+                width: 50vw;
+                height: 17vh;
+                left: 29vw;
+            }
+            #we1{
+                height: 7.2%;
+                width: 10.2%;
+                top: 74%;
+                left: 63.5%;
+            }
+            #we2{
+                height: 7.2%;
+                width: 10.2%;
+                top: 74%;
+                left: 32.4%;
+            }
+        }
+
+
+
+
+
+
+        /*===================================================*/
+        @keyframes run {
+            from{
+                margin: 0;
+            }
+            to{
+                margin-left: -2700px;
+            }
+        }
+        @keyframes wel {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(1200deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div id="main">
+    <div id="sky"></div>
+    <div id="road"></div>
+    <div id="build"><!--<img src="img_2/city.png" style="width: 400vw; height: 30vh">--></div>
+    <div id="car"><img src="img_2/car.png" width="100%"  height="100%"></div>
+    <div id="we1"><img src="img_2/wheel.png" height="100%" width="100%"></div>
+    <div id="we2"><img src="img_2/wheel.png" height="100%" width="100%"></div>
+
+</div></d/body>
+</html>
